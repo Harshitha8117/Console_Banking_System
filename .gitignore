@@ -1,0 +1,19 @@
+# Compiled Java class files
+*.class
+
+# Serialized data files
+bank_data.dat
+
+# IDE config
+*.iml
+.idea/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Deployment
+out/
+target/
+build/

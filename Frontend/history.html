@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transaction History - Console Banking System</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Transaction History</h2>
+    <div id="history">
+      <!-- Transactions will be rendered here -->
+    </div>
+    <p><a href="dashboard.html">← Back to Dashboard</a></p>
+  </div>
+
+  <script>
+    // Simulated rendering — in a servlet-connected system, this would be server-side
+    fetch('history', { method: 'GET' })
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('history');
+        if (data.length === 0) {
+          container.innerHTML = '<p>No transactions found.</p>';
+        } else {
+          const ul = document.createElement('ul');
+          data.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = entry;
+            ul.appendChild(li);
+          });
+          container.appendChild(ul);
+        }
+      })
+      .catch(() => {
+        document.getElementById('history').innerHTML = '<p>Failed to load history.</p>';
+      });
+  </script>
+</body>
+</html>

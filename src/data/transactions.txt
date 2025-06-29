@@ -1,0 +1,6 @@
+[2025-06-29 15:21:59] Hari: Deposited ₹456.0
+[2025-06-29 15:22:14] Hari: Withdrew ₹34.0
+[2025-06-29 15:22:48] pugal: Deposited ₹674.0
+[2025-06-29 15:23:25] pugal: Transferred ₹222.0 to 6b702d1a
+[2025-06-29 15:23:49] pugal: Transferred ₹44.0 to 7d2fafbd
+[2025-06-29 15:24:11] pugal: Transferred ₹1.0 to 7d2fafbd

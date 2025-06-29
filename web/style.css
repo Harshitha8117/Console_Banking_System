@@ -1,0 +1,31 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 2em;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h1, h2 {
+  color: #004e92;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+pre {
+  background: #eee;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
